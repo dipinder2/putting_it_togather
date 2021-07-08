@@ -18,11 +18,11 @@ export default class PersonCard extends Component {
 	render() {
 		const {name, age, hair } = this.props.person
 		return (
-			<div>
+			<div className="card-body">
 				<h1>{name}</h1>
 				<p>Age: {this.state.agecounter}</p>
 				<p>Hair Color: {this.state.color}</p>
-				<button onClick={()=>{
+				<button className="btn btn-primary" onClick={()=>{
 					this.handleAgeAndColor()
 				}}>Birthday button for {name}</button>
 			 </div>
